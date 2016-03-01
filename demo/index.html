@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <! META data tags>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Assignment #4" content="">
+    <meta name="Joseph B Harris" content="">
+    <! META data title for project>
+    <title>CONUS Weather</title>
+
+    <! Bootstrap core CSS>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous" />
+
+    <!Leaflet and CSS style templates>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+ 	  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!Navigation icon creation>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CONUS Real-Time Weather</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <!Header links and header titles>
+          <ul class="nav navbar-nav">
+            <li><a target="_blank" href="https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Observations/radar_base_reflectivity/MapServer">Doppler Radar</a></li>
+            <li><a target="_blank" href="https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/watch_warn_adv/MapServer/1">Weather Warnings and Advisories</a></li>
+            <li><a target="_blank" href="http://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/sat_meteo_emulated_imagery_lightningstrikedensity_goes_time/MapServer/0">Lightning Strike Density</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!Title and summary>
+    <div class="container">
+      <link rel="stylesheet" href="css/starter-template.css">
+        <div class="starter-template">
+          <h1>CONUS Weather</h1>
+          <p class="lead">Doppler Radar, Weather Warnings and Advisories, and Lightning Strike Density</p>
+            <div id = "map"> </div>
+        </div>
+    </div>
+
+    <!Bootstrap core JavaScript>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
